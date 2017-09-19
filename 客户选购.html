@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选购界面</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/idangerous.swiper.min.js"></script>
+</head>
+<body>
+	<header class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/local/audi.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-jq.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-ss.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-2016.jpg"></div>
+        </div>
+        <p>第<span id="num">1</span>张图片<span class="arrow"></span></p>
+    </header>
+    <!-- 顶部滑屏 end -->
+    <section class="car-mes">
+    	<div class="car-top">
+          <h1>凯迪拉克CT6 2016款 28T 时尚型</h1>
+          <p>¥ 439900<span>现车充足</span></p>	    	
+      </div>
+      <!-- 目标车型信息 end-->
+      <div class="car-phone clearfix">
+          <i class="fl"></i>
+          <p class="fl"><a href="tel:4006630666">400 66 30666</a></p>
+         
+          <p class="fr customer"><a href="tel:4006630666">客服24小时热线</a><span class="fr arrow"></span>
+          </p>
+      </div>
+      <!-- 在售车型相关配置展示 end-->
+      <div class="car-color clearfix">
+        <div class="body-color flex">
+            <p>车身颜色</p>
+            <select class="flex-1 color">
+                <option>皓月白</option>
+                <option>皓月蓝</option>
+                <option>皓月黄</option>
+                <option>皓月绿</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+        <div class="trim-color flex">
+            <p>内饰颜色</p>
+            <select class="flex-1 color">
+                <option>皓月白</option>
+                <option>皓月蓝</option>
+                <option>皓月黄</option>
+                <option>皓月绿</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+    <!-- 车型信息展示 end -->
+    </section>
+    <section class="switch-tab-1">
+        <div class="tabs flex">
+            <span class="flex-1">购买说明</span>
+            <span class="flex-1 cur">参数配置</span>
+            <span class="flex-1">货款说明</span>
+        </div>
+    </section>
+    <!-- 车型配置说明 end-->
+    <section class="swiper-container-list">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-visible swiper-slide-active ">
+                <div class="content-slide">    
+                    <p>1</p>
+                </div>
+            </div>
+            <!-- 门店 end -->
+            <div class="swiper-slide">
+                <div class="content-slide">    
+                    <img src="images/local/configuration.jpg">
+                </div>
+            </div>
+            <!-- 热门车型 end -->       
+            <div class="swiper-slide">
+                <div class="content-slide">    
+                    <p>3</p>
+                </div>
+
+            </div>
+            <!-- 3 end -->       
+        </div>
+    </section>
+    <!-- 车型具体说明 end-->
+    
+    <footer class="car-buy">
+        <ul class="car-ul clearfix">
+            <li>
+                <i class="collect"></i>
+                <span>收藏</span>
+            </li>
+            <li>
+                <i class="share"></i>
+                <span>分享</span>
+            </li>
+            <li>
+                <a href="订单详情.html">立即抢购</a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            autoplay: 4000,  //设定4秒间隔自动滚动
+            autoplayDisableOnInteraction : false,  //设定打断之后仍可自动滚动
+            onSlideChangeStart : function() {
+                    console.log(swiper.activeIndex);
+                    var curindex = swiper.activeIndex;
+                    curindex++;
+                    $('#num').text(""+curindex);
+                }
+
+    });
+     $(function(){  
+        /* 切换Tab */
+            var tabsSwiper;
+
+            tabsSwiper = new Swiper('.swiper-container-list', {
+                speed : 500,
+                initialSlide :1,
+                onSlideChangeStart : function() {
+                    $('.tabs span').removeClass('cur'); 
+                    $(".tabs span").eq(tabsSwiper.activeIndex).addClass('cur');
+                }
+            });
+
+            $(".tabs span").on('touchstart mousedown', function(e) {
+                e.preventDefault();           
+                $(".tabs .cur").removeClass('cur');              
+                $(this).addClass('cur');
+                tabsSwiper.swipeTo($(this).index());
+        
+            });
+        
+            $(".tabs span").click(function(e) {
+                e.preventDefault();
+
+            });
+    });
+
+     $('.collect').click(function(){
+        $(this).toggleClass('cur');
+     });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* 三角形公用样式 */
+.arrow{ display: inline-block; vertical-align: top; margin: .08rem 0 0 0; width: .15rem;height: .15rem; border-top: 2px solid #8c8c8c; border-left: 2px solid #8c8c8c; -webkit-transform: rotate(135deg); transform: rotate(135deg);}
+.triangle-down{ width: 0; height: 0; border-left: .08rem solid transparent; border-right: .08rem solid transparent; border-top: .12rem solid #979797;}
+
+/* 顶部 轮播滑屏 通用样式 */
+.swiper-container{ height: 3.44rem;}
+.swiper-container .swiper-wrapper{ z-index: 1;}
+.swiper-container p{ background: #605d5d; position: absolute; right: .2rem; bottom: .15rem; z-index: 5; height: .27rem; width: 1.3rem; color: #c9c9c9; font-size: .19rem; line-height: .27rem; text-indent: .15rem;  border-radius: .15rem;}
+
+/* 首页部分 */
+.swiper-container-1{ margin-left: auto; margin-right: auto; position: relative; overflow: hidden; z-index: 1;}
+.switch-tab{ height: .8rem; border-bottom: solid 1px #c1c1c7;}
+.switch-tab span{ display: block; height: .8rem; line-height: .8rem; text-align: center; font-size: .25rem;}
+.switch-tab .tabs span:first-child{ border-right: solid 2px #f0f0f0;}
+.switch-tab span.cur{ color: #FF6A07;}
+
+.store-top-1{ background: url(../images/local/car-sky-back.jpg) ; background-size: cover; padding: 0 .15rem; height: 1.55rem;}
+.store-top-1.ferrari{ background: url(../images/local/Ferrari-back.jpg) ;}
+.store-top-1 .logo img{ width: 1.08rem; height: 1.08rem; margin-top: .2rem; border-radius: 50%;}
+.store-top-1 .item-text{ padding-top: .25rem;}
+.store-top-1 .item-text{ margin-left: .15rem; color: #FFF;}
+
+.store-top-1 .item-text h1{ font-size: .28rem;}
+.store-top-1 .item-text p{ width: .78rem; height: .28rem; margin: .08rem 0; font-size: .21rem; background-color: #979797; border-radius: 5px; text-indent: 2px;}
+
+.car-list{ padding-top: .2rem;}
+.car-list h1{ padding: .1rem .15rem; font-size: .24rem; color: #434343;}
+.car-list h1 i{ background: url(../images/icons/fire.jpg) ; background-size: cover; display: inline-block; width: .2rem; height: .2rem; margin-right: .05rem;}
+.car-list h1 span{ margin-left: .05rem; font-size: .21rem; color: #979797;}
+.car-list ul li{ padding-bottom: .2rem; border-bottom: solid 1px #c1c1c7;}
+
+.car-message{ padding: .3rem .15rem .3rem .15rem; border-bottom: solid 1px #f3f3f3;}
+.car-message a{ display: block;}
+.car-message img{ width: 1.6rem; height: .9rem; margin-right: .2rem;}
+.car-message h2{ font-size: .24rem; color: #434343; line-height: .4rem;}
+.car-message span{ color: #ff6600;}
+.car-message .had-brought{ font-size: .21rem; color: #ababab;}
+
+.car-other{ padding: .1rem .15rem;}
+.car-other span{ font-size: .21rem; color: #5C5C5C; letter-spacing:.5px;}
+.car-other i{ display: inline-block; width: .3rem; height: .25rem; margin-right: .05rem; line-height: .25rem; text-align: center; font-size: .17rem; color: #FFF;}
+.car-other i.benefit{ background: url(../images/icons/benefit.jpg); background-size: cover; margin-bottom: .05rem;}
+.car-other i.ticket{ background: url(../images/icons/ticket.jpg); background-size: cover;}
+
+.sale-store{ padding: .2rem .15rem 0 .15rem; border-bottom: solid 1px #e5e5e5;}
+.sale-store a{ display: block; float: right; position: relative; width: .8rem; font-size: .21rem; color: #ababab;}
+.sale-store p{ font-size: .21rem; color: #ababab;}
+.sale-store i{ position: absolute ; top: .1rem; right: 0; width: 0; height: 0; border-left: .13rem solid transparent; border-right: .13rem solid transparent; border-bottom: .13rem solid #979797; border-top: 0;}
+.sale-store i.triangle-down{ border-top: .13rem solid #979797; border-bottom: 0;}
+.sale-store ul{ margin-top: .2rem;}
+.sale-store li{ display: none; height: .7rem; line-height: .7rem; border-top: solid 1px #e5e5e5;}
+.sale-store li:first-child{ display: block;}
+.sale-store li p{ color: #1c1c1c;}
+.sale-store li span.arrow{ position: relative; top: .15rem; right: .1rem;}
+
+.hot-car .ul-hotcar li{ background: #FFF;}
+.hot-car .ul-hotcar ul li.show{ display: block;}
+
+.hot-car .car-other{ border-bottom: solid 1px #f3f3f3;} 
+
+/* 门店详情 */
+.store-top{ position: relative;}
+.store-top img{ height: 3rem; width: 6.4rem;}
+.store-top i{ background:url(../images/icons/loc.png) ; background-size: cover; position: relative; top:.03rem; display: inline-block; width: .2rem; height: .26rem;}
+.store-top .message{ padding: 0.1rem .35rem .05rem .15rem;}
+.store-top .bg{ position: absolute; left: 0; bottom: 0; width: 100%; color: #FFF; background: #3d3d3c; opacity: 0.8;}
+.store-car .assort{ position: relative; height: .72rem; border-bottom: solid 1px #bfbfbf;}
+.store-car .assort li{ text-align: center; border-right: solid 1px #e6e6e6;}
+.store-car .assort li span{ position: relative; display: block; line-height: .72rem; font-size: .25rem; color:#434343;}
+.store-car .assort li span.cur{ color: #FF6600;}
+.store-car .assort li span i{ position: absolute; right: .35rem; top: .29rem; display: block;}
+.store-car .assort li span i.cur{ border-top: .12rem solid #ff6600;}
+
+.store-car .same-p p{ width: 1.4rem; height: .55rem; line-height: .55rem; background: #FFF; margin-top: 0; text-align: center; color: #1c1c1c; font-size: .25rem; border-radius: .1rem;}
+.store-car .same-p p.cur{ background: #FF6600; color: #FFF;}
+.dad{ position: relative;}
+.store-car .assort-list{ position: absolute; top: .72rem; left: 0; z-index: 10; display: none; margin:0 auto; background: #FFF; width: 6.4rem; padding: .25rem 0 .25rem .2rem; border-bottom: solid 1px #c1c1c1;}
+.store-car .assort-list li{ float: left; width: 1.55rem; margin-bottom: .2rem; border: 0;}
+.store-car .assort-list li img{ height: .55rem; }
+.store-car .assort-list p{ margin-top: .1rem; font-size: .25rem; color: #5c5c5c;}
+.store-car .assort-list .btn{ margin-top: .35rem; width: 2.2rem; height: .5rem; background: #FF6600; color: #FFF; line-height: .5rem; text-align: center; border-radius: .1rem;}
+.store-car .assort-list.show{ display: block;}
+.car-brand li{ padding: .2rem;}
+
+.user-defined p{ text-align: left; font-size: .17rem; color: #7f7f7f;}
+.user-defined .price{ margin-top: .6rem;}
+.user-defined .price .ipt{ margin: 0 .05rem; width: 1.5rem; height: .5rem; text-align: center; line-height: .5rem; color: #121212; border-radius: 2px; border: solid 1px #cac9ce;}
+
+.store-car .car-list{ z-index: 5;}
+.store-car .car-list li{ padding: .2rem 0; margin: 0 .15rem; border-bottom: solid 1px #f0f0f0;}
+.store-car .car-list img{ margin-right: .2rem; margin-top: .1rem; width: 1.6rem; height: .9rem; border: solid 1px #f0f0f0;}
+.store-car .car-list a{ display: block;}
+.store-car .car-list h2{ margin-bottom: .1rem; font-size: .25rem; color: #434343;}
+.store-car .car-list p{ font-size: .21rem; color: #434343;}
+.store-car .car-list span{ font-size: .28rem; color: #ff6600; line-height: .42rem;}
+.store-car .car-list span.had-brought{ font-size: .21rem; color: #ababab;}
+
+/* 车型浏览 */
+.car-top{ padding: .3rem .15rem; border-bottom: solid 1px #e5e5e5;}
+.car-top h1{ font-size: .25rem; color: #434343;}
+.car-top a{ color: #434343;}
+.car-top p{ margin-top: .1rem; font-size: .28rem; color: #ff6600; }
+.car-top span{ display: inline-block; width: 1rem; height: .24rem; line-height: .24rem; font-size: .18rem; color: #FF6600; border-radius: .02rem; border: solid 1px #FF6600; text-align: center; text-overflow: ellipsis; white-space: nowrap; overflow:hidden;}
+
+.car-phone{ padding: .2rem .15rem;}
+.car-phone p{ font-size: .24rem; color: #434343;}
+.car-phone p.customer{ font-size: .21rem; color: #ababab;}
+.car-phone span{ margin-left: .15rem;}
+.car-phone i{ background: url(../images/icons/phone.png) ; display: inline-block; margin-right: .1rem; background-size: cover; width: .25rem; height: .3rem;}
+
+.car-configuration{ background: #eee; height: .37rem; line-height: .37rem; padding: 0 .15rem;}
+.car-configuration p{ font-size: .21rem; color: #7e7e7e;}
+
+.configuration-parameter{ padding: .2rem 0;}
+.configuration-parameter h2{ padding-left: .1rem; margin-left: .2rem; font-size: .25rem; color: #434343; border-left: solid .04rem #434343; font-weight: bold;}
+
+.configuration-list{ margin-top: .2rem; padding: 0 .15rem .2rem .3rem; border-top: solid 1px #eee;}
+.configuration-list li{ padding: .25rem 0; border-bottom: solid 1px #eee;}
+.configuration-list li:last-child{ border-bottom: 0;}
+.configuration-list p{ font-size: .25rem; color: #434343;}
+.configuration-list p.price{ color: #ff6600;}
+.configuration-list span{ font-size: .21rem; color: #7e7e7e;}
+.configuration-list .progressbar{ background: #eee; margin: .09rem 0 .1rem .1rem; width: 1.65rem; height: .1rem; border-radius: .1rem;}
+.configuration-list .progressbar .cur{ background: #ff6600; position: relative; width: 1.2rem; height: .1rem; border-radius: .1rem; }
+.configuration-list .progressbar.ss .cur{ width: .8rem;}
+
+.list-text{ margin-bottom: .1rem;}
+
+/* 用户选购 */
+.swiper-container-list{ z-index: 1; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem; position: relative; overflow: hidden;}
+.swiper-container-list img{ height: 6rem;}
+
+.car-top{ padding: .3rem .15rem; border-bottom: solid 1px #e5e5e5;}
+.car-top h1{ font-size: .25rem; color: #434343;}
+.car-top p{ margin-top: .1rem; font-size: .28rem; color: #ff6600; }
+.car-top span{ display: inline-block; width: 1rem; height: .24rem; margin-left: .2rem; line-height: .24rem; font-size: .18rem; color: #FF6600; border-radius: .02rem; border: solid 1px #FF6600; text-align: center; text-overflow: ellipsis; white-space: nowrap; overflow:hidden;}
+
+.car-phone{ padding: .2rem .15rem;}
+.car-phone p{ font-size: .24rem; color: #434343;}
+.car-phone p.customer{ font-size: .21rem; color: #ababab;}
+.car-phone span{ margin-left: .15rem;}
+.car-phone i{ background: url(../images/icons/phone.png) ; display: inline-block; margin-right: .1rem; background-size: cover; width: .25rem; height: .3rem;}
+
+.car-color{ background: #eee; padding-top: .27rem; padding-bottom: .2rem;}
+.body-color,.trim-color{ background: #FFF; position: relative; height: .7rem; padding: 0 .15rem; border-bottom: solid 1px #e5e5e5; line-height: .7rem; font-size: .25rem; color: #434343;}
+.car-color .arrow{ display: block; position: absolute; right: .15rem; top: .22rem; }
+.car-color .color{ display: block; color: #1084dd;padding-right: .2rem; height: .68rem; width: 1rem; font-size: .25rem; background: #FFF; direction: rtl;}
+
+.switch-tab-1{ height: .8rem; border-bottom: solid 1px #e5e5e5;}
+.switch-tab-1 span{ display: block; height: .8rem; line-height: .8rem; text-align: center; font-size: .25rem; border-right: solid 2px #f0f0f0;}
+.switch-tab-1 span:last-child{ border-right: 0;}
+.switch-tab-1 span.cur{ color: #FF6A07; border-bottom: solid .06rem #ff6600;}
+
+.car-buy{ background: #FFF; position: fixed; bottom: 0; left: 0; z-index: 10; width: 100%; height: .85rem; border-top: solid 1px #dfdfdf;}
+.car-buy li{ float: left; width: .8rem; margin-left: .22rem; padding-top: .1rem;}
+.car-buy li:last-child{ background: #FF6600; float: right; padding-top: 0rem; width: 3.2rem; height: .85rem; color: #FFF; line-height: .85rem; text-align: center; font-size: .29rem;}
+.car-buy li i{ display: block; width: .4rem; height: .4rem;}
+.car-buy li i.collect{ background: url(../images/icons/collect.png) ; background-size: cover;}
+.car-buy li i.collect.cur{ background: url(../images/icons/collect-r.png) ; background-size: cover;}
+.car-buy li i.share{ background: url(../images/icons/share.png) ; background-size: cover;}
+.car-buy li span{ font-size: .19rem; color: #979797;}
+.car-buy a{ display: block; width: 3.2rem; color: #FFF;}
+
+
+/* 订单详情 */
+.person-message{ background: #eee; border-bottom: solid 1px #d5d5d5;}
+.person-message h2{ padding-top: .35rem; padding-left: .15rem; font-size: .21rem; color: #7e7e7e;}
+.person-message ul{ padding: .15rem;}
+.person-message li{ margin-bottom: .1rem;}
+.person-message .ipt{ background: #FFF; padding-left: .15rem; width: 6.05rem; height: .68rem; font-size: .25rem;}
+
+.business-message ul{ padding: .2rem .2rem 0 .2rem;}
+.business-message li{ margin-bottom: .1rem;}
+.business-message p{ font-size: .21rem; color: #7e7e7e;}
+.business-message p.user-p{ color: #434343; font-weight: bold}
+
+.goods-title{ background: #dbdbdb; padding-left: .15rem; height: .48rem; line-height: .48rem; border-bottom: solid 1px #c8c8c8;}
+.goods-title h2{ font-size: .21rem; color: #979797;}
+
+.goods-model{ padding: .18rem; border-bottom: solid 1px #d4d4d4;}
+.goods-model img{ width: 1.68rem; height: 1.15rem; margin-right: .15rem; border: solid 1px #eee;}
+
+.goods-text p.brand{ margin-bottom: .06rem; font-size: .25rem; color: #434343; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.goods-text span{ font-size: .21rem; color: #434343;}
+.goods-user{ margin-right: .40rem; margin-top: .1rem;}
+.goods-user p{ font-size: .21rem; color: #434343;}
+
+.goods-bg{ background: #f0f0f0; padding-top: .17rem;}
+.goods-price{ background: #FFF; padding: .2rem; margin-bottom: .8rem; border-bottom: solid 1px #dcdcdc;}
+.goods-price ul{ float: right;}
+.goods-price li{ text-align: right}
+.goods-price p{ font-size: .21rem; color: #7e7e7e;}
+.goods-price span{ font-size: .28rem; color: #FF6600;}
+
+.goods-buy{ position: fixed; bottom: 0; left: 0; background: #eee; width: 100%;}
+.goods-buy a{ display: block; background: #ff6600; width: 100%; height: .85rem; line-height: .85rem; text-align: center; color: #FFF;}
+
+

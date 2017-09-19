@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>车型详情</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/def.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/idangerous.swiper.min.js"></script>
+
+</head>
+<body>
+
+	<header class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/local/audi.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-jq.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-ss.jpg"></div>
+            <div class="swiper-slide"><img src="images/local/audi-2016.jpg"></div>
+        </div>
+        <p>第<span id="num">1</span>张图片<span class="arrow"></span></p>
+    </header>
+	<!-- 顶部滑屏 end -->
+    <section class="car-mes">
+    	<div class="car-top">
+	    	<h1><a href="客户选购.html">A4L 40 TFSI 进取型 S tronic</a></h1>
+	    	<p>厂商指导价：¥28.99 - 41.28万 <span>现车充足</span></p>	    	
+    	</div>
+    	<!-- 目标车型信息 end-->
+    	<div class="car-phone clearfix">
+    		<i class="fl"></i>
+    		<p class="fl"><a href="tel:4006630666">400 66 30666</a></p>
+    		<p class="fr customer"><a href="tel:4006630666">客服24小时热线</a><span class="fr arrow"></span></p>
+    	</div>
+    	<div class="car-configuration">
+    		<p>在售配置</p>
+    	</div>
+
+    	<ul class="configuration-parameter">
+    		<li>
+    			<h2>2.0升 涡轮增压 190马力</h2>
+    			<ul class="configuration-list">
+    				<li>
+    					<div class="list-text clearfix">
+	    					<p class="fl"><a href="#">2017款 40 TFSI 进取型</a></p>
+	    					<p class="fr price">29.89万</p>
+    					</div>
+    					<div class="clearfix">
+    						<span class="fl">热度</span>
+    						<div class="fl progressbar">
+    							<div class="cur"></div>
+    						</div>
+    						<span class="fr">厂商指导价：29.98万</span>
+    					</div>
+    				</li>
+    				<li>
+    					<div class="list-text clearfix">
+	    					<p class="fl"><a href="#">2017款 40 TFSI 时尚型</a></p>
+	    					<p class="fr price">33.98万</p>
+    					</div>
+    					<div class="clearfix">
+    						<span class="fl">热度</span>
+    						<div class="fl progressbar ss">
+    							<div class="cur"></div>
+    						</div>
+    						<span class="fr">厂商指导价：33.98万</span>
+    					</div>
+    				</li>
+    			</ul>
+    		</li>
+    		<li>
+    			<h2>1.8升 涡轮增压 160马力</h2>
+    			<ul class="configuration-list">
+    				<li>
+    					<div class="list-text clearfix">
+	    					<p class="fl"><a href="#">2016款 35 TFSI 典藏版 自动标准型</a></p>
+	    					<p class="fr price">29.70万</p>
+    					</div>
+    					<div class="clearfix">
+    						<span class="fl">热度</span>
+    						<div class="fl progressbar">
+    							<div class="cur"></div>
+    						</div>
+    						<span class="fr">厂商指导价：29.70万</span>
+    					</div>
+    				</li>
+    				<li>
+    					<div class="list-text clearfix">
+	    					<p class="fl"><a href="#">2017款 40 TFSI 时尚型</a></p>
+	    					<p class="fr price">33.98万</p>
+    					</div>
+    					<div class="clearfix">
+    						<span class="fl">热度</span>
+    						<div class="fl progressbar ss">
+    							<div class="cur"></div>
+    						</div>
+    						<span class="fr">厂商指导价：33.98万</span>
+    					</div>
+    				</li>
+    			</ul>
+    		</li>
+    	</ul>
+    	<!-- 在售车型相关配置展示 end-->
+    </section>
+    <!-- 车辆配置浏览 end -->
+	<script> 
+        var swiper = new Swiper('.swiper-container',{
+                autoplay: 4000,  //设定4秒间隔自动滚动
+                autoplayDisableOnInteraction : false,  //设定打断之后仍可自动滚动
+                onSlideChangeStart : function() {
+                        var curindex = swiper.activeIndex;
+                        curindex++;
+                        $('#num').text(""+curindex);
+                    }
+        });
+ </script>
+</body>
+</html>
